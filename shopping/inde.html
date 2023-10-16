@@ -1,0 +1,2715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-library</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/esut.jpeg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+   <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Get Your Library Card</h3>
+
+            <p class="newsletter-desc">
+             Before going into the Lab for textbook and more, <b> Library Card needed</b>
+            </p>
+
+            <div>
+              <input type="text" class="email-field" placeholder="Full-Name" required  type="text">
+            </div><br>
+            <div>
+              <input type="email" class="email-field" placeholder="Computer Science" type="text" disabled>
+            </div><br>
+            <div>
+              <input type="" class="email-field" placeholder="Matric Number" required type="text">
+            </div><br>
+            <div>
+              <input type="" class="email-field" placeholder="Year Of Entire" required type="text">
+            </div>
+            
+           
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Submit</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div> 
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/ps.jpeg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone In year 1 just boughts
+      </p>
+
+      <p class="toast-title">
+       Problem solving textbook
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header class="set">
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+          <li>
+            <img src="assets/images/logo/esut_logo.png" alt="esut-logo"  width="250" height="70">
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="eur">NAIRA</option>
+            <option value="usd">USD</option>
+            
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Igbo</option>
+            <option value="fr">Yoruba</option>
+            <option value="fr">Hausa</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/e-logo.png" alt="logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+        <div class="header-alert-news">
+          <h4 class="dept">DEPARTMENT OF COMPUTER SCIENCE</h4>
+        </div>
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">YEAR 1 LECTURERS</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Mbah Luchi David</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dr Engr Asogwu</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mrs Ugwu Edith</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Prof olofin Babatunde</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Ngene Ndubuis</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">YEAR 2 LECTURERS</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Mbah Luchi David</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dr Engr Asogwu</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mrs Ugwu Edith</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Prof olofin Babatunde</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">dr Ozioko</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">YEAR 3 LECTURERS</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Mbah Luchi David</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dr Engr Asogwu</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mrs Ugwu Edith</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Prof Okoye</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Ngene Ndubuis</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">YEAR 4 LECTURERS</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Mbah Luchi David</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dr Engr Asogwu</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mrs Ugwu Edith</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Prof olofin Babatunde</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mr Ngene Ndubuis</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Prof Okoye</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dr ozioko</a>
+                </li>
+                
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Male Lecturers</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Prof Olofin Babatunde</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Prof Okoye</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mr Ngene Ndubuis</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Dr Engr Asogwa Tochukwu</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Dr Ozioko</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mr Mbah Luchi David</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">female Lecturers</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Mrs Ugwu Edith</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Staffs</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Emma</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Afam</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Amaka</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Joy</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Topics</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">software engeering</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">web development</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Ai</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">more...</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">About Us</a>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">HOME</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">MALE LECTURERS</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Prof olofin Babatunda</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Prof Okoy</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mr Ngene Ndubuis</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dr Engr Asogwa Tochukwu</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dr Ozioko</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">mr mbah david Luchi</a>
+            </li>
+
+          </ul>
+          
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">FEMALE LECTURERS</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mrs Ugwu Edith</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Prof Faith</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">STAFFS</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Emma</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Afam</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Amaka</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Joy</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">TOPICS</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Software Engineenering</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">AI</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Web development</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Computer Graphic</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">About Us</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner 01.jpeg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending item</p>
+
+              <h2 class="banner-title">Understanding the code editors and entensions</h2>
+
+              <p style="color: white;" class="banner-text">
+                starting at <b> ₦2,000</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/web 1.webp" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending Courses</p>
+
+              <h2 class="banner-title" style="color: white;">Web development book with vs code extensions</h2>
+
+              <p class="banner-text" style="color: white;">
+                starting at<b> ₦1,500</b>.00
+              </p>
+
+              <a style="color: white;" href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/AI.jpg" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">A Book to read</p>
+
+              <h2 class="banner-title">Know More About AI</h2>
+
+              <p class="banner-text">
+                starting at<b> ₦1,000</b>.99
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+        <h3>Standard Courses</h3>
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/ai py.jpeg" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Web development</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/al.jpeg" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">graphic design</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/AI.jpg" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">python for AI</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/banner 1.png" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">software Engineering</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/dm.jpeg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">database Management</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/net.jpeg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">networking</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/in to pc.jpeg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">intro to pc</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/java.png" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Java</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+        
+      
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">FILING DETAILS</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+                    <p class="menu-title">Year 1 filing</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">acceptance fee receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">School fees receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Jamb admission letter</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">waec $ neco results</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+                    <p class="menu-title">Year 2 Filing</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Signed Course forms</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">faculty receipt</p>
+                      <data value="75" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Departmental receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">School fees receipt</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                  
+                    <p class="menu-title">Year 3 Filing</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Signed Course forms</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">faculty receipt</p>
+                      <data value="75" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Departmental receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">School fees receipt</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+                    <p class="menu-title">final Year filing</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Signed Course forms</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">faculty receipt</p>
+                      <data value="75" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Departmental receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">School fees receipt</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+                    <p class="menu-title">Ens year 2 filing</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Ens receipt</p>
+                      <data value="68" class="stock" title="Available Stock">3500</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">signed Course Form</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">2 passport</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">school fees receipt</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+                    <p class="menu-title">Ens year 3 Filing</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Ens receipt</p>
+                      <data value="68" class="stock" title="Available Stock">3500</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">signed Course Form</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">2 passport</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">school fees receipt</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                   
+                    <p class="menu-title">Clearance Document</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">medical receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">matricculation fee receipt</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Student Clearance receipt</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">signed course forms</p>
+                    
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">STAFF DEPARTMENT</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/pic 2.jpeg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Afam</h4>
+                    </a>
+
+                  
+                    <div class="price-box">
+                      <p class="price">secretary</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/pic 3.jpeg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Emma</h4>
+                    </a>
+                   
+                    <div class="price-box">
+                      <p class="price">Bookkeeping</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/pic.jpeg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Amaka</h4>
+                    </a>
+                    
+                    <div class="price-box">
+                      <p class="price">Store keeper</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/pic 4.jpeg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Joy</h4>
+                    </a>
+                    <div class="price-box">
+                      <p class="price">Student affair</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Year 1</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <h2 class="title">First Semester</h2>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/ps.jpeg" alt="textbook" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+                      
+                      <a href="#">
+                        <h4 class="showcase-title">Problem solving</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">mr david</a>
+
+                      <div class="price-box">
+                        <p class="price">₦3,500</p>
+                        <p>csc 113</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/intro to sta.jpeg" alt="textbook" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">intro to statistics</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">sir abugu</a>
+                  
+                      <div class="price-box">
+                        <p class="price">₦3,000</p>
+                        <p>sta 113</p>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/intro to cs.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">intro to computer info tech</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">mrs ugwu edith</a>
+                  
+                      <div class="price-box">
+                        <p class="price">₦2,000</p>
+                        <p>csc 111</p>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/maths.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">mathematics</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">sir abart</a>
+                  
+                      <div class="price-box">
+                        <p class="price">₦3,500</p>
+                        <p>mat 111</p>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <h2 class="title">Second Semester</h2>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/cpsp.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">computer application software package</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Engr Asogwa</a>
+                
+                      <div class="price-box">
+                        <p class="price">₦2,500</p>
+                        <p>csc 112</p>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/cpal.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">computer programming and language 1</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category"> sir philip</a>
+                
+                      <div class="price-box">
+                        <p class="price">₦2,500</p>
+                        <p>csc 114</p>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/set.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">set, logic and number system</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">prof ezugorie</a>
+                
+                      <div class="price-box">
+                        <p class="price">₦2,000</p>
+                        <p>mat 116</p>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/infer.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">inference</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">sir Abugu</a>
+                
+                      <div class="price-box">
+                        <p class="price">₦3,000</p>
+                        <p>Sta 112</p>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">year 2</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+                  <h2 class="title">First Semester</h2>
+
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/cpap ii.jpg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">computer promgramming and language ii</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">mrs ugwu edith</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦2,500</p>
+                        <p>css 211</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/intro to cs.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">intro to computer system</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">engr asogwa</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦3,000</p>
+                        <p>csc 215</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/cal.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">calculus II</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">prof Ezugorie</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦2,700</p>
+                       <p>mat 233</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sas.jpeg" alt="textbookt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">statistics for applied science</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">mrs chinaza</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦1,700</p>
+                        <p>sta 211</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+
+                  <h2 class="title">second Semester</h2>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/ens.png" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">enterpreneurship</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">prof. orga</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦3,500</p>
+                        <p>Ens 222</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/it.jpeg" alt="textbook" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">information technology</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">mrs ugwu</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦2,500</p>
+                        <p>csc 252</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/or i.jpg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">operating system I</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">mr david mbah</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦3,000</p>
+                        <p>csc 232</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/computer tech.jpeg" alt="textbook" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">computation techniques and structured programming</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Prof Olofin</a>
+            
+                      <div class="price-box">
+                        <p class="price">₦1,500</p>
+                        <p>csc 212</p>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <div class="product-box">
+
+            <!--
+              - PRODUCT MINIMAL
+            -->
+  
+            <div class="product-minimal">
+  
+              <div class="product-showcase">
+  
+                <h2 class="title">year 3</h2>
+  
+                <div class="showcase-wrapper has-scrollbar">
+  
+                  <div class="showcase-container">
+                    <h2 class="title">First Semester</h2>
+  
+                    <div class="showcase">
+  
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/or II.jfif" alt="textbook" width="70" class="showcase-img">
+                      </a>
+  
+                      <div class="showcase-content">
+  
+                        <a href="#">
+                          <h4 class="showcase-title">opreating system II</h4>
+                        </a>
+  
+                        <a href="#" class="showcase-category">sir David</a>
+  
+                        <div class="price-box">
+                          <p class="price">₦3,000</p>
+                          <p>csc 333</p>
+                        </div>
+  
+                      </div>
+  
+                    </div>
+  
+                    <div class="showcase">
+                    
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/nm.jpeg" alt="textbook" class="showcase-img" width="70">
+                      </a>
+                    
+                      <div class="showcase-content">
+                    
+                        <a href="#">
+                          <h4 class="showcase-title">numerical methods</h4>
+                        </a>
+                    
+                        <a href="#" class="showcase-category">Engr asogwa</a>
+                    
+                        <div class="price-box">
+                          <p class="price">₦2,500</p>
+                          <p>csc 315</p>
+                        </div>
+                    
+                      </div>
+                    
+                    </div>
+  
+                    <div class="showcase">
+                    
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/ens.png" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+                    
+                      <div class="showcase-content">
+                    
+                        <a href="#">
+                          <h4 class="showcase-title">Entreprenuership studies</h4>
+                        </a>
+                    
+                        <a href="#" class="showcase-category">Prof Orga</a>
+                    
+                        <div class="price-box">
+                          <p class="price">₦3,500</p>
+                          <p>Ens 311</p>
+                        </div>
+                    
+                      </div>
+                    
+                    </div>
+  
+                    <div class="showcase">
+                    
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/cc.jpg" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+                    
+                      <div class="showcase-content">
+                    
+                        <a href="#">
+                          <h4 class="showcase-title">compiler construction I</h4>
+                        </a>
+                    
+                        <a href="#" class="showcase-category">Mrs ugwu</a>
+                    
+                        <div class="price-box">
+                          <p class="price">₦2,500</p>
+                          <p>csc 331</p>
+                        </div>
+                    
+                      </div>
+                    
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase-container">
+                    <h2 class="title">Second Semester</h2>
+                  
+                    <div class="showcase">
+                  
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/siwes.jpeg" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+                  
+                      <div class="showcase-content">
+                  
+                        <a href="#">
+                          <h4 class="showcase-title">Students Industrial Work Experience scheme <br>(SIWES)</h4>
+                        </a>
+                  
+                        <a href="#" class="showcase-category">At school portal</a>
+                  
+                        
+                  
+                      </div>
+                  
+                    </div>
+
+                  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              
+              <div class="product-showcase">
+              
+                <h2 class="title">year 4</h2>
+              
+                <div class="showcase-wrapper  has-scrollbar">
+              
+                  <div class="showcase-container">
+                    <h2 class="title">First Semester</h2>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/cg.jpeg" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">Computer Graphic</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">sir david</a>
+              
+                        <div class="price-box">
+                          <p class="price">₦3,000</p>
+                          <p>csc 415</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/iwp.jfif" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">internet and web programming</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">Mrs ugwu</a>
+              
+                        <div class="price-box">
+                          <p class="price">₦2,000</p>
+                          <p>csc 461</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/se.jfif" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">Software engineering</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">sir ozioko</a>
+              
+                        <div class="price-box">
+                          <p class="price">₦4,000</p>
+                          <p>csc 463</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/seminar.jpeg" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">Seminar</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">sir ozioko</a>
+              
+                        <div class="price-box">
+                          <p class="price">supervisor Registration</p>
+                          <p>csc 489</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                  <div class="showcase-container">
+                    <h2 class="title">Second Semester</h2>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/or i.jpg" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">opereting research</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">sir david</a>
+              
+                        <div class="price-box">
+                          <p class="price">₦2,500</p>
+                          <p>csc 418</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/spm.jfif" alt="textbook" class="showcase-img" width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">software project</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">Prof Olofin</a>
+              
+                        <div class="price-box">
+                          <p class="price">₦1,500</p>
+                          <p>csc 426</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/hci.jpeg" alt="textbook" class="showcase-img"
+                          width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">human computer interface</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">sir Ngene</a>
+              
+                        <div class="price-box">
+                          <p class="price">₦3,000</p>
+                          <p>csc 468</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                    <div class="showcase">
+              
+                      <a href="#" class="showcase-img-box">
+                        <img src="./assets/images/products/rp.jpeg" alt="textbook" class="showcase-img" width="70">
+                      </a>
+              
+                      <div class="showcase-content">
+              
+                        <a href="#">
+                          <h4 class="showcase-title">Research Project</h4>
+                        </a>
+              
+                        <a href="#" class="showcase-category">engr Asogwa</a>
+              
+                        <div class="price-box">
+                          <p class="price">supervisor Registration</p>
+                          <p>csc 498</p>
+                        </div>
+              
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+            </div>
+    
+         </div>
+
+      </div>
+
+    </div>
+      
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">LECTURER</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/testimonial-1.jpg" alt="lecturer" class="testimonial-banner" width="150" height="150">
+
+              <p class="testimonial-name">Mrs ugwu Edith</p>
+
+              <p class="testimonial-title"></p>
+              
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/board.jpeg" alt="lecturer" class="cta-banner" width="300" height="300">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">approved notices</p>
+
+              <h2 class="cta-title">Computer science department</h2>
+              <button class="cta-btn">Notice board</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+
+
+
+          <div class="testimonial">
+
+            <h2 class="title">Lecturer</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/p3.jpeg" alt="lecturer" class="testimonial-banner" width="100" height="100">
+
+              <p class="testimonial-name">Engr Asogwa</p>
+
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/p 4.jpeg" alt="lecturer" width="300" height="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Sir Ngene</a>
+
+              <a href="#">
+                <h3 class="blog-title">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                  dolor dolor sit amet.</h3>
+              </a>
+
+              <p class="blog-meta">
+               HOD
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/p 1.jpeg" alt="lecturer" width="300" height="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Prof Okoye</a>
+
+              <a href="#">
+                <h3 class="blog-title">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                  dolor dolor sit amet.</h3>
+              </a>
+
+              <p class="blog-meta">
+               LECTURER
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/p 2.jpeg" alt="lecturer"
+                class="blog-banner" width="300" height="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Mr david</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                  dolor dolor sit amet.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                LECTURER
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/p 5.jpeg" alt="lecturer"
+                class="blog-banner" width="300" height="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Prof Vivian</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                  dolor dolor sit amet.</a>
+              </h3>
+          
+              <p class="blog-meta">
+               LECTURER
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/p 7.jpeg" alt="lecturer."
+                class="blog-banner" width="300" height="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Prof Olofin</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                  dolor dolor sit amet.</a>
+              </h3>
+          
+              <p class="blog-meta">
+               LECTURER
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Calendar</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Academic Calendar</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Event Calendar</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Student Affiar</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Programmes</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Classes</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Exam Timetable</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Lecturers Textbook</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hand Book</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Free softwares</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Course outline</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Documentation</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Departmental Notice</h2>
+          </li>
+        
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Order Of Filing</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Form Sale</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Checking of Result</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Enugu state university of
+              science and technology (ESUT)
+              PMB 01660
+              agbani,Enugu State, Nigeria
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(+234) 903 5507 323</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">eziranki@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Computer scince</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
